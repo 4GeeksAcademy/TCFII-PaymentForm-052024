@@ -3,36 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>form Project</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e8391a8094.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="fmbody">
-        <div><h1>Payment For Example</h1></div>  
-        <div class="pymtbdy">
-            <div class="fldmiss">Some fields are missing.</div>
-            <div class="crdinfo">
-                <div class="crdnum"></div>
-                <div class="cvcnum"></div>
-                <div class="chrgamt"></div>
-            </div>
-            <div class="btmleft">
-                <div class="fname"></div>
-                <div class="cty"></div>
-                <div class="crdacpt"></div>
-            </div>
-            <div class="btmright">
-                <div class="lname"></div>
-                <div class="stZIP">
-                    <div class="st"></div>
-                    <div class="ZIP"></div>
-                </div>
-                <div class="mssg"></div>
-            </div>
-        </div>
-        <div class="btmButton">
-            
-        </div>
-    </div>
+	<form method="POST" action="--WEBBOT-SELF--">	
+<div class="card">
+	<div class="row1">Payment Form Example</div>
+	<div class="row2">Some fields are missing</div>
+	<br>		
+	<div class="group1">
+		<div>Card #<br><input type="text" name="T1" size="25" style="font-family: Arial; font-size: 10pt"></td></div>
+		<div>CVC #<br><input type="text" name="T2" size="13" style="font-family: Arial; font-size: 10pt"></div>
+		<div>Amount<br>$<input type="text" name="T3" size="9" style="font-family: Arial; font-size: 10pt"></div>
+	</div>	
+<br>
+	<div class="middle">
+		<div class="mid-left">
+			<div class="name">First Name<br><input type="text" name="T1" size="25" style="font-family: Arial; font-size: 10pt"></div>
+			<div class="name">City<br><input type="text" name="T1" size="25" style="font-family: Arial; font-size: 10pt"></div>
+			<div class="name">We Accept<br>
+				<input type="radio" name="ccards" value="mast"><i class="fa-brands fa-cc-mastercard"></i>
+				<input type="radio" name="ccards" value="visa"><i class="fa-brands fa-cc-visa"></i>
+				<input type="radio" name="ccards" value="dine"><i class="fa-brands fa-cc-diners-club"></i>
+				<input type="radio" name="ccards" value="amex"><i class="fa-regular fa-credit-card"></i>
+			</div>
+		</div>	
+		<div class="mid-right">
+			<div class="name">Last Name<br><input type="text" name="T1" size="27" style="font-family: Arial; font-size: 10pt"></div>
+			<div class="postal">
+				<div class="name">State<br>
+					<select size="1" name="D1" style="font-family: Arial; font-size: 10pt">
+						<option>Pick a State</option>
+						<option>Florida</option>
+					</select>					
+				</div>
+				<div class="name">Postal Code<br><input type="text" name="T1" size="10" style="font-family: Arial; font-size: 10pt"></div>
+				</div>
+				<div class="name">Message<br>
+					<textarea rows="2" name="S1" cols="28" style="font-family: Arial; font-size: 10pt"></textarea><br>
+					Add any notes here.
+				</div>
+			</div>		
+
+	</div>	
+	<div class="bottom">
+		<input type="reset" value="Cancel" name="B3" style="background-color: darkgray;border-color:darkgray; font-family: Arial; color: #FFFFFF; font-size: 10pt">&nbsp;
+		<input type="submit" value="Send" name="B1" style="background-color: #3399FF;border-color:#3399FF; font-family: Arial; color: #FFFFFF; font-size: 10pt"">
+	</div>
+</div>
+</form>
 </body>
 </html>
